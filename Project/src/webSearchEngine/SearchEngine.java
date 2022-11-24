@@ -32,7 +32,7 @@ public class SearchEngine {
 
 			switch (option) {
 			case "y":
-				String[] url = {
+				String[] url = {			//List of libraries for the books to search from with depth 4
 						"https://www.reddit.com/r/books/",
 						"https://en.wikipedia.org/wiki/Book",
 						"http://www.newyorker.com/books",
