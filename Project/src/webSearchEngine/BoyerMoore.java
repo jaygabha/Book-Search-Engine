@@ -19,7 +19,7 @@ public class BoyerMoore {
 	}
 
 	// return offset of first match; N if no match 
-	// The modified approach to BoyerMoore allows mismatches in the string if the mismatches are less than 10% at the time of mismatch
+	// The modified approach to BoyerMoore allows mismatches in the string if the mismatches are less than 50% at the time of mismatch
 	public int search(String txt) {
 		int M = this.pat.length();
 		int N = txt.length();
@@ -41,7 +41,7 @@ public class BoyerMoore {
 			}
 			else {
 				mismatches++;
-				if(.9 * matches >= (int)mismatches) {  //At the moment of mismatch if the string matches 90% or more then it is considered as a match
+				if(.5 * matches >= (int)mismatches) {  //At the moment of mismatch if the string matches 50% or more then it checks further string
 					i--; 
 					j--;
 				}
