@@ -41,7 +41,7 @@ public class BoyerMoore {
 			}
 			else {
 				mismatches++;
-				if(matches >= (int)mismatches * .9) {  //At the moment of mismatch if the string matches 90% or more then it is considered as a match
+				if(.9 * matches >= (int)mismatches) {  //At the moment of mismatch if the string matches 90% or more then it is considered as a match
 					i--; 
 					j--;
 				}

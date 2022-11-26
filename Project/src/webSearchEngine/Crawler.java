@@ -13,7 +13,7 @@ public class Crawler {
 
 	//HashSet is used as it prevents the duplicate value
 	private static Set<String> crawledList = new HashSet<String>();
-	private static int maxDepth = 2; //depth is 2 as our system took more time above that to crawl
+	private static int maxDepth = 3; //depth is 2 as our system took more time above that to crawl
 	private static String regex = "https?:\\/\\/(www\\.)?[-a-zA-Z0-9@:%._\\+~#=]{1,256}\\.[a-zA-Z0-9()]{1,6}\\b([-a-zA-Z0-9()@:%_\\+.~#?&//=]*)";
 
 	/**
